@@ -255,6 +255,17 @@
 			"   "
 		]
 	},
+	"simpleDotsScrolling": {
+		"interval": 200,
+		"frames": [
+			".  ",
+			".. ",
+			"...",
+			" ..",
+			"  .",
+			"   "
+		]
+	},
 	"star": {
 		"interval": 70,
 		"frames": [
