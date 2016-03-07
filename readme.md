@@ -2,7 +2,7 @@
 
 > 50+ spinners for use in the terminal
 
-![](screenshot.gif)
+[![asciicast](https://asciinema.org/a/38570.png)](https://asciinema.org/a/38570)
 
 The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
 
