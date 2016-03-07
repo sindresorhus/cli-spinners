@@ -6,8 +6,6 @@ var frame = 0;
 var spinner = 0;
 var next;
 
-
-
 var showNextFrame = function () {
 	var frames = cliSpinners[spinners[spinner]].frames;
 	logUpdate(frames[frame++ % frames.length] + ' ' + spinners[spinner]);
@@ -16,7 +14,7 @@ var showNextFrame = function () {
 var showNextSpinner = function () {
 	if (next) {
 		clearInterval(next);
-		spinner++
+		spinner++;
 	}
 	if (spinner in spinners) {
 		var s = cliSpinners[spinners[spinner]];
@@ -25,7 +23,5 @@ var showNextSpinner = function () {
 	}
 };
 
-
-
 console.log(spinners.length + ' spinners\n');
-showNextSpinner()
+showNextSpinner();
