@@ -21,7 +21,7 @@ var showNextSpinner = function () {
 	if (spinner in spinners) {
 		var s = cliSpinners[spinners[spinner]];
 		next = setInterval(showNextFrame, s.interval || 100);
-		setTimeout(showNextSpinner, (s.interval || 100) * s.frames.length);
+		setTimeout(showNextSpinner, Math.max((s.interval || 100) * s.frames.length, 1000));
 	}
 };
 
