@@ -2,20 +2,27 @@
 var logUpdate = require('log-update');
 var cliSpinners = require('./');
 var spinners = Object.keys(cliSpinners);
-var i = 0;
-var j = 0;
-var frames = [];
+var frame = 0;
+var spinner = 0;
+var next;
 
-console.log(spinners.length + ' spinners\n');
+var showNextFrame = function () {
+	var frames = cliSpinners[spinners[spinner]].frames;
+	logUpdate(frames[frame++ % frames.length] + ' ' + spinners[spinner]);
+};
 
-setInterval(function () {
-	if (++i === frames.length) {
-		j++;
-		i = 0;
+var showNextSpinner = function () {
+	if (next) {
+		clearInterval(next);
+		spinner++;
 	}
 
-	frames = cliSpinners[spinners[j]].frames;
-	logUpdate(frames[i] + ' ' + spinners[j]);
-}, 100);
+	if (spinner < spinners.length) {
+		var s = cliSpinners[spinners[spinner]];
+		next = setInterval(showNextFrame, s.interval);
+		setTimeout(showNextSpinner, Math.max(s.interval * s.frames.length, 1000));
+	}
+};
 
-// $ node example.js
+console.log(spinners.length + ' spinners\n');
+showNextSpinner();
