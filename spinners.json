@@ -277,6 +277,31 @@
 			"✷"
 		]
 	},
+	"star2": {
+		"interval": 80,
+		"frames": [
+			"+",
+			"x",
+			"*"
+		]
+	},
+	"flip": {
+		"interval": 70,
+		"frames": [
+			"_",
+			"_",
+			"_",
+			"-",
+			"`",
+			"`",
+			"'",
+			"´",
+			"-",
+			"_",
+			"_",
+			"_"
+		]
+	},
 	"hamburger": {
 		"interval": 100,
 		"frames": [
@@ -358,6 +383,24 @@
 			"⠂"
 		]
 	},
+	"boxBounce": {
+		"interval": 120,
+		"frames": [
+			"▖",
+			"▘",
+			"▝",
+			"▗"
+		]
+	},
+	"boxBounce2": {
+		"interval": 100,
+		"frames": [
+			"▌",
+			"▀",
+			"▐",
+			"▄"
+		]
+	},
 	"triangle": {
 		"interval": 50,
 		"frames": [
@@ -367,25 +410,7 @@
 			"◥"
 		]
 	},
-	"square": {
-		"interval": 120,
-		"frames": [
-			"▖",
-			"▘",
-			"▝",
-			"▗"
-		]
-	},
-	"square2": {
-		"interval": 100,
-		"frames": [
-			"▌",
-			"▀",
-			"▐",
-			"▄"
-		]
-	},
-	"circle": {
+	"arc": {
 		"interval": 100,
 		"frames": [
 			"◜",
@@ -396,7 +421,7 @@
 			"◟"
 		]
 	},
-	"circle2": {
+	"circle": {
 		"interval": 120,
 		"frames": [
 			"◡",
