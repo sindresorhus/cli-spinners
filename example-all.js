@@ -18,8 +18,8 @@ var showNextSpinner = function () {
 	}
 	if (spinner in spinners) {
 		var s = cliSpinners[spinners[spinner]];
-		next = setInterval(showNextFrame, s.interval || 100);
-		setTimeout(showNextSpinner, Math.max((s.interval || 100) * s.frames.length, 1000));
+		next = setInterval(showNextFrame, s.interval);
+		setTimeout(showNextSpinner, Math.max(s.interval * s.frames.length, 1000));
 	}
 };
 
