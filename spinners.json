@@ -310,7 +310,7 @@
 			"☴"
 		]
 	},
-	"grow": {
+	"growVertical": {
 		"interval": 120,
 		"frames": [
 			"▁",
@@ -325,7 +325,7 @@
 			"▃"
 		]
 	},
-	"grow2": {
+	"growHorizontal": {
 		"interval": 120,
 		"frames": [
 			"▏",
@@ -429,7 +429,7 @@
 			"◠"
 		]
 	},
-	"spin": {
+	"squareCorners": {
 		"interval": 180,
 		"frames": [
 			"◰",
@@ -438,7 +438,7 @@
 			"◱"
 		]
 	},
-	"spin2": {
+	"circleQuarters": {
 		"interval": 120,
 		"frames": [
 			"◴",
@@ -447,7 +447,7 @@
 			"◵"
 		]
 	},
-	"spin3": {
+	"circleHalves": {
 		"interval": 50,
 		"frames": [
 			"◐",
@@ -456,7 +456,7 @@
 			"◒"
 		]
 	},
-	"spin4": {
+	"squish": {
 		"interval": 100,
 		"frames": [
 			"╫",
@@ -595,7 +595,7 @@
 			"▹▹▹▹▸"
 		]
 	},
-	"bouncing": {
+	"bouncingBar": {
 		"interval": 80,
 		"frames": [
 			"[    ]",
