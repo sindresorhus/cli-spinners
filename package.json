@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "asciicast": "asciinema rec -c 'node example-all.js' -t 'cli-spinner' -q"
   },
   "files": [
     "index.js",
