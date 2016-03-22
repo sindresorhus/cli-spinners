@@ -4,8 +4,6 @@
 
 ![](screenshot.gif)
 
-[![asciicast](https://asciinema.org/a/39958.png)](https://asciinema.org/a/39958)
-
 The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
 
 You probably want to use one of these spinners through the [`ora`](https://github.com/sindresorhus/ora) module.
@@ -31,6 +29,13 @@ console.log(cliSpinners.dots);
 }
 */
 ```
+
+
+## Preview
+
+The header gif is outdated. Click below to see a preview of all the spinners.
+
+[![asciicast](https://asciinema.org/a/9mlcoussb137m32swwuqtb2p1.png)](https://asciinema.org/a/9mlcoussb137m32swwuqtb2p1?size=big)
 
 
 ## API

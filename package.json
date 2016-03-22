@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "xo && ava",
-    "asciicast": "asciinema rec --command 'node example-all.js' --title 'cli-spinner' --quiet"
+    "asciicast": "asciinema rec --command='node example-all.js' --title='cli-spinner' --quiet"
   },
   "files": [
     "index.js",
