@@ -1,6 +1,7 @@
 'use strict';
 var logUpdate = require('log-update');
 var cliSpinners = require('./');
+
 var spinner = cliSpinners[process.argv[2] || 'dots'];
 var i = 0;
 

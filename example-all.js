@@ -1,6 +1,7 @@
 'use strict';
 var logUpdate = require('log-update');
 var cliSpinners = require('./');
+
 var spinners = Object.keys(cliSpinners);
 var frame = 0;
 var spinner = 0;
