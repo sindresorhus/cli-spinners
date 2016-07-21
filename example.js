@@ -1,12 +1,12 @@
 'use strict';
-var logUpdate = require('log-update');
-var cliSpinners = require('./');
+const logUpdate = require('log-update');
+const cliSpinners = require('./');
 
-var spinner = cliSpinners[process.argv[2] || 'dots'];
-var i = 0;
+const spinner = cliSpinners[process.argv[2] || 'dots'];
+let i = 0;
 
-setInterval(function () {
-	var frames = spinner.frames;
+setInterval(() => {
+	const frames = spinner.frames;
 	logUpdate(frames[i = ++i % frames.length] + ' Unicorns');
 }, spinner.interval);
 

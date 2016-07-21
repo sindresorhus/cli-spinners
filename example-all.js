@@ -1,25 +1,25 @@
 'use strict';
-var logUpdate = require('log-update');
-var cliSpinners = require('./');
+const logUpdate = require('log-update');
+const cliSpinners = require('./');
 
-var spinners = Object.keys(cliSpinners);
-var frame = 0;
-var spinner = 0;
-var next;
+const spinners = Object.keys(cliSpinners);
+let frame = 0;
+let spinner = 0;
+let next;
 
-var showNextFrame = function () {
-	var frames = cliSpinners[spinners[spinner]].frames;
+const showNextFrame = () => {
+	const frames = cliSpinners[spinners[spinner]].frames;
 	logUpdate(frames[frame++ % frames.length] + ' ' + spinners[spinner]);
 };
 
-var showNextSpinner = function () {
+const showNextSpinner = () => {
 	if (next) {
 		clearInterval(next);
 		spinner++;
 	}
 
 	if (spinner < spinners.length) {
-		var s = cliSpinners[spinners[spinner]];
+		const s = cliSpinners[spinners[spinner]];
 		next = setInterval(showNextFrame, s.interval);
 		setTimeout(showNextSpinner, Math.max(s.interval * s.frames.length, 1000));
 	}
