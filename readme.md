@@ -1,6 +1,6 @@
 # cli-spinners [![Build Status](https://travis-ci.org/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.org/sindresorhus/cli-spinners)
 
-> 50+ spinners for use in the terminal
+> 60+ spinners for use in the terminal
 
 ![](screenshot.gif)
 
@@ -33,9 +33,9 @@ console.log(cliSpinners.dots);
 
 ## Preview
 
-The header gif is outdated. Click below to see a preview of all the spinners.
+The header GIF is outdated. Click below to see a preview of all the spinners.
 
-[![asciicast](https://asciinema.org/a/9mlcoussb137m32swwuqtb2p1.png)](https://asciinema.org/a/9mlcoussb137m32swwuqtb2p1?size=big)
+[![](https://asciinema.org/a/95348.png)](https://asciinema.org/a/95348?size=big)
 
 
 ## API
