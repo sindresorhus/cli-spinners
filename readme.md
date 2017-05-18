@@ -33,9 +33,7 @@ console.log(cliSpinners.dots);
 
 ## Preview
 
-The header GIF is outdated. Click below to see a preview of all the spinners.
-
-[![](https://asciinema.org/a/95348.png)](https://asciinema.org/a/95348?size=big)
+The header GIF is outdated. See all the [spinner at once](http://jsfiddle.net/sindresorhus/2eLtsbey/embedded/result/) or [one at the time](https://asciinema.org/a/95348?size=big).
 
 
 ## API
