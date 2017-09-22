@@ -1,6 +1,6 @@
 'use strict';
 const logUpdate = require('log-update');
-const cliSpinners = require('./');
+const cliSpinners = require('.');
 
 const spinners = Object.keys(cliSpinners);
 let frame = 0;
