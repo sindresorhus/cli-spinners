@@ -47,6 +47,7 @@ Each spinner comes with a recommended `interval` and an array of `frames`.
 
 - [ora](https://github.com/sindresorhus/ora) - Elegant terminal spinner
 - [CLISpinner](https://github.com/kiliankoe/CLISpinner) - Terminal spinners for Swift
+- [py-spinners](https://github.com/ManrajGrover/py-spinners) - Python port
 
 
 ## License
