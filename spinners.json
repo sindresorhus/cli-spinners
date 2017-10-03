@@ -836,7 +836,7 @@
 			"b"
 		]
 	},
-	"weather": {
+  "weather": {
     "interval": 100,
     "frames": [
       "☀️ ",
@@ -864,7 +864,7 @@
       "☀️ "
    ]
   },
-	"christmas": {
+  "christmas": {
     "interval": 400,
     "frames": [
       "🌲", 
