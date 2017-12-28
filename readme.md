@@ -2,7 +2,9 @@
 
 > 60+ spinners for use in the terminal
 
-![](screenshot.gif)
+<p align="center">
+	<img width="700" src="https://cdn.rawgit.com/marionebl/cli-spinners/dcac74b75e52d4d9fe980e6fce98c2814275739e/screenshot.svg">
+</p>
 
 The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
 
