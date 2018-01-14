@@ -49,3 +49,6 @@ process.stdin.on('keypress', (str, key) => {
 
 console.log(spinners.length + ' spinners\n');
 showNextSpinner();
+
+// $ node example-all.js
+// Press `Enter` to skip to the next spinner
