@@ -3,7 +3,10 @@
 > 60+ spinners for use in the terminal
 
 <p align="center">
-	<img width="700" src="https://cdn.rawgit.com/sindresorhus/cli-spinners/dcac74b75e52d4d9fe980e6fce98c2814275739e/screenshot.svg">
+	<br>
+	<img width="700" src="screenshot.svg">
+	<br>
+	<br>
 </p>
 
 The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
