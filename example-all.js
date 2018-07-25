@@ -11,7 +11,7 @@ let next;
 let scrutator;
 
 const showNextFrame = () => {
-	const frames = cliSpinners[spinners[spinner]].frames;
+	const {frames} = cliSpinners[spinners[spinner]];
 	logUpdate(frames[frame++ % frames.length] + ' ' + spinners[spinner]);
 };
 

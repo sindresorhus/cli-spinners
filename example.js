@@ -6,7 +6,7 @@ const spinner = cliSpinners[process.argv[2] || 'dots'];
 let i = 0;
 
 setInterval(() => {
-	const frames = spinner.frames;
+	const {frames} = spinner;
 	logUpdate(frames[i = ++i % frames.length] + ' Unicorns');
 }, spinner.interval);
 
