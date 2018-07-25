@@ -18,7 +18,8 @@
   },
   "files": [
     "index.js",
-    "spinners.json"
+    "spinners.json",
+    "index.d.ts"
   ],
   "types": "index.d.ts",
   "keywords": [
