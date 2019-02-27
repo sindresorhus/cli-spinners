@@ -1,2 +1,6 @@
 'use strict';
-module.exports = require('./spinners.json');
+
+const spinners = Object.assign({}, require('./spinners.json'));
+
+module.exports = spinners;
+module.exports.default = spinners;

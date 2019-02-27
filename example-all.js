@@ -1,5 +1,4 @@
 'use strict';
-/* eslint-disable unicorn/no-process-exit */
 const readline = require('readline');
 const logUpdate = require('log-update');
 const cliSpinners = require('.');
@@ -11,7 +10,7 @@ let next;
 let scrutator;
 
 const showNextFrame = () => {
-	const frames = cliSpinners[spinners[spinner]].frames;
+	const {frames} = cliSpinners[spinners[spinner]];
 	logUpdate(frames[frame++ % frames.length] + ' ' + spinners[spinner]);
 };
 
@@ -26,6 +25,7 @@ const showNextSpinner = () => {
 		next = setInterval(showNextFrame, s.interval);
 		scrutator = setTimeout(showNextSpinner, Math.max(s.interval * s.frames.length, 1000));
 	} else {
+		// eslint-disable-next-line unicorn/no-process-exit
 		process.exit(0);
 	}
 };
@@ -36,6 +36,7 @@ process.stdin.setRawMode(true);
 
 process.stdin.on('keypress', (str, key) => {
 	if (key.ctrl && key.name === 'c') {
+		// eslint-disable-next-line unicorn/no-process-exit
 		process.exit(130);
 	}
 
