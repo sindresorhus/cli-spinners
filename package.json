@@ -13,12 +13,13 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava",
+    "test": "xo && ava && tsd-check",
     "asciicast": "asciinema rec --command='node example-all.js' --title='cli-spinner' --quiet"
   },
   "files": [
-    "index.js",
-    "spinners.json"
+		"index.js",
+		"index.d.ts",
+		"spinners.json"
   ],
   "keywords": [
     "cli",
@@ -38,8 +39,9 @@
     "json"
   ],
   "devDependencies": {
-    "ava": "*",
+    "ava": "^1.2.1",
     "log-update": "^2.1.0",
-    "xo": "*"
+    "tsd-check": "^0.3.0",
+    "xo": "^0.24.0"
   }
 }
