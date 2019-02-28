@@ -87,8 +87,8 @@ export interface Spinner {
  * @example
  *
  * const cliSpinners = require('cli-spinners');
- * console.log(cliSpinners.dots);
  *
+ * console.log(cliSpinners.dots);
  * // {
  * //   interval: 80,
  * //   frames: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
