@@ -13,7 +13,7 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd-check",
+		"test": "xo && ava && tsd",
 		"asciicast": "asciinema rec --command='node example-all.js' --title='cli-spinner' --quiet"
 	},
 	"files": [
@@ -39,9 +39,9 @@
 		"json"
 	],
 	"devDependencies": {
-		"ava": "^1.2.1",
-		"log-update": "^2.1.0",
-		"tsd-check": "^0.3.0",
+		"ava": "^1.4.1",
+		"log-update": "^3.2.0",
+		"tsd": "^0.7.2",
 		"xo": "^0.24.0"
 	}
 }
