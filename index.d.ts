@@ -68,7 +68,8 @@ declare namespace cliSpinners {
 		| 'christmas'
 		| 'grenade'
 		| 'point'
-		| 'layer';
+		| 'layer'
+		| 'betaWave';
 
 	interface Spinner {
 		/**
