@@ -12,6 +12,7 @@ declare namespace cliSpinners {
 		| 'dots10'
 		| 'dots11'
 		| 'dots12'
+		| 'dots8Bit'
 		| 'line'
 		| 'line2'
 		| 'pipe'
