@@ -1,4 +1,4 @@
-# cli-spinners [![Build Status](https://travis-ci.org/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.org/sindresorhus/cli-spinners)
+# cli-spinners [![Build Status](https://travis-ci.com/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.com/sindresorhus/cli-spinners)
 
 > 60+ spinners for use in the terminal
 
@@ -13,13 +13,11 @@ The list of spinners is just a [JSON file](spinners.json) and can be used wherev
 
 You probably want to use one of these spinners through the [`ora`](https://github.com/sindresorhus/ora) module.
 
-
 ## Install
 
 ```
 $ npm install cli-spinners
 ```
-
 
 ## Usage
 
@@ -35,11 +33,9 @@ console.log(cliSpinners.dots);
 */
 ```
 
-
 ## Preview
 
-The header GIF is outdated. See all the [spinner at once](http://jsfiddle.net/sindresorhus/2eLtsbey/embedded/result/) or [one at the time](https://asciinema.org/a/95348?size=big).
-
+The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/sindresorhus/2eLtsbey/embedded/result/) or [one at the time](https://asciinema.org/a/95348?size=big).
 
 ## API
 
@@ -47,15 +43,9 @@ Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
 
-
 ## Related
 
 - [ora](https://github.com/sindresorhus/ora) - Elegant terminal spinner
 - [CLISpinner](https://github.com/kiliankoe/CLISpinner) - Terminal spinners for Swift
 - [py-spinners](https://github.com/ManrajGrover/py-spinners) - Python port
 - [spinners](https://github.com/FGRibreau/spinners) - Terminal spinners for Rust
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
