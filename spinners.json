@@ -1182,7 +1182,7 @@
 			"ββββββρ"
 		]
 	},
-	"fingerdance": {
+	"fingerDance": {
 		"interval": 160,
 		"frames": [
 			"☝️",
@@ -1208,7 +1208,7 @@
 			"🤜 ✨ 🤛"
 		]
 	},
-	"header": {
+	"soccerHeader": {
 		"interval": 80,
 		"frames": [
 			" 🧑⚽️       🧑",
