@@ -2,6 +2,7 @@
 	"name": "cli-spinners",
 	"version": "2.3.0",
 	"description": "Spinners for use in the terminal",
+	"main": "spinners.json",
 	"license": "MIT",
 	"repository": "sindresorhus/cli-spinners",
 	"author": {
@@ -17,7 +18,6 @@
 		"asciicast": "asciinema rec --command='node example-all.js' --title='cli-spinner' --quiet"
 	},
 	"files": [
-		"index.js",
 		"index.d.ts",
 		"spinners.json"
 	],
