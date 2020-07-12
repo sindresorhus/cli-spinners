@@ -1,5 +1,6 @@
 declare namespace cliSpinners {
 	type SpinnerName =
+		| 'random'
 		| 'dots'
 		| 'dots2'
 		| 'dots3'
@@ -104,7 +105,6 @@ declare const cliSpinners: {
 } & {
 	// TODO: Remove this for the next major release
 	default: typeof cliSpinners;
-	random: () => cliSpinners.Spinner;
 };
 
 export = cliSpinners;
