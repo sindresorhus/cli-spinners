@@ -3,14 +3,14 @@ import cliSpinners from '.';
 
 function mockMathRandom(fixedResult) {
 	unMockMathRandom();
-	const originalImpl = Math.random;
+	const originalImplementation = Math.random;
 	Math.random = () => fixedResult;
-	Math.random.originalImpl = originalImpl;
+	Math.random.originalImplementation = originalImplementation;
 }
 
 function unMockMathRandom() {
-	if (Math.random.originalImpl) {
-		Math.random = Math.random.originalImpl;
+	if (Math.random.originalImplementation) {
+		Math.random = Math.random.originalImplementation;
 	}
 }
 
@@ -22,19 +22,19 @@ test('main', t => {
 
 test('random getter', t => {
 	const spinnersList = Object.keys(cliSpinners)
-		// TODO: remove this filter when "module.exports.default = spinners" is removed from index.js;
+		// TODO: Remove this filter when "module.exports.default = spinners" is removed from index.js.
 		.filter(key => key !== 'default')
 		.map(key => cliSpinners[key]);
 
-	// Should always return an item from the spinners list
+	// Should always return an item from the spinners list.
 	t.true(spinnersList.includes(cliSpinners.random));
 
-	// Should return the first spinner when math.random is the min value
+	// Should return the first spinner when `Math.random()` is the minimum value.
 	mockMathRandom(0);
 	t.is(cliSpinners.random, spinnersList[0]);
 
 	mockMathRandom(0.99);
-	// Should return the last spinner when math.random is the max value
+	// Should return the last spinner when `Math.random()` is the maximum value.
 	t.is(cliSpinners.random, spinnersList[spinnersList.length - 1]);
 
 	unMockMathRandom();
