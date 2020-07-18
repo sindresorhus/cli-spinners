@@ -87,7 +87,7 @@ declare namespace cliSpinners {
 }
 
 /**
-60+ spinners for use in the terminal.
+70+ spinners for use in the terminal.
 
 @example
 ```

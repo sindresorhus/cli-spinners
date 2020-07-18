@@ -14,6 +14,8 @@ function unMockMathRandom() {
 	}
 }
 
+console.log('Spinner count:', Object.keys(cliSpinners).length);
+
 test('main', t => {
 	t.is(typeof cliSpinners, 'object');
 	t.is(cliSpinners.dots.interval, 80);

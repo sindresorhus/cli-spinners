@@ -1,6 +1,6 @@
-# cli-spinners [![Build Status](https://travis-ci.com/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.com/sindresorhus/cli-spinners)
+# cli-spinners [![Build Status](https://travis-ci.com/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.com/github/sindresorhus/cli-spinners)
 
-> 60+ spinners for use in the terminal
+> 70+ spinners for use in the terminal
 
 <p align="center">
 	<br>
@@ -43,7 +43,7 @@ Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
 
-`cliSpinners.random` will return a random spinner each time it's called.
+The `random` spinner will return a random spinner each time it's called.
 
 ## Related
 
