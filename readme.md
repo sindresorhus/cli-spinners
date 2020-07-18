@@ -43,6 +43,8 @@ Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
 
+`cliSpinners.random` will return a random spinner each time it's called.
+
 ## Related
 
 - [ora](https://github.com/sindresorhus/ora) - Elegant terminal spinner
