@@ -22,7 +22,7 @@ $ npm install cli-spinners
 ## Usage
 
 ```js
-const cliSpinners = require("cli-spinners");
+const cliSpinners = require('cli-spinners');
 
 console.log(cliSpinners.dots);
 /*
