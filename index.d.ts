@@ -60,6 +60,7 @@ declare namespace cliSpinners {
 		| 'hearts'
 		| 'clock'
 		| 'earth'
+		| 'material'
 		| 'moon'
 		| 'runner'
 		| 'pong'
