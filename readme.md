@@ -22,7 +22,7 @@ $ npm install cli-spinners
 ## Usage
 
 ```js
-const cliSpinners = require('cli-spinners');
+const cliSpinners = require("cli-spinners");
 
 console.log(cliSpinners.dots);
 /*
@@ -42,6 +42,8 @@ The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/s
 Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
+
+`cliSpinners.random` will return a random spinner each time it's called.
 
 ## Related
 
