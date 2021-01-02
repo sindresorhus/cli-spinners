@@ -1,4 +1,4 @@
-# cli-spinners [![Build Status](https://travis-ci.com/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.com/github/sindresorhus/cli-spinners)
+# cli-spinners
 
 > 70+ spinners for use in the terminal
 
