@@ -41,6 +41,7 @@
 	"devDependencies": {
 		"ava": "^1.4.1",
 		"log-update": "^3.2.0",
+		"string-length": "^4.0.1",
 		"tsd": "^0.7.2",
 		"xo": "^0.24.0"
 	}
