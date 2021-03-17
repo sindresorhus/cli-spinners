@@ -26,7 +26,7 @@ test('main', t => {
 
 test('constant width', t => {
 	for (const key of Object.keys(cliSpinners)) {
-		if (key !== 'default') {
+		if (key === 'default') {
 			continue;
 		}
 
