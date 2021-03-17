@@ -41,7 +41,7 @@ The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/s
 
 Each spinner comes with a recommended `interval` and an array of `frames`.
 
-[See the spinners.](spinners.json)
+[See the spinners.](spinners.js)
 
 The `random` spinner will return a random spinner each time it's called.
 

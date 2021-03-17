@@ -20,7 +20,7 @@
 	"files": [
 		"index.js",
 		"index.d.ts",
-		"spinners.json"
+		"spinners.js"
 	],
 	"keywords": [
 		"cli",
