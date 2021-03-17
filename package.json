@@ -1,13 +1,14 @@
 {
 	"name": "cli-spinners",
-	"version": "2.3.0",
+	"version": "2.5.0",
 	"description": "Spinners for use in the terminal",
 	"license": "MIT",
 	"repository": "sindresorhus/cli-spinners",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=6"

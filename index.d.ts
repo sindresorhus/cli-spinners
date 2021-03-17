@@ -60,6 +60,7 @@ declare namespace cliSpinners {
 		| 'hearts'
 		| 'clock'
 		| 'earth'
+		| 'material'
 		| 'moon'
 		| 'runner'
 		| 'pong'
@@ -86,7 +87,7 @@ declare namespace cliSpinners {
 }
 
 /**
-60+ spinners for use in the terminal.
+70+ spinners for use in the terminal.
 
 @example
 ```
@@ -102,6 +103,11 @@ console.log(cliSpinners.dots);
 declare const cliSpinners: {
 	readonly [spinnerName in cliSpinners.SpinnerName]: cliSpinners.Spinner;
 } & {
+	/**
+	Returns a random spinner each time it's called.
+	*/
+	readonly random: cliSpinners.Spinner;
+
 	// TODO: Remove this for the next major release
 	default: typeof cliSpinners;
 };

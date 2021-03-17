@@ -1,6 +1,6 @@
-# cli-spinners [![Build Status](https://travis-ci.com/sindresorhus/cli-spinners.svg?branch=master)](https://travis-ci.com/sindresorhus/cli-spinners)
+# cli-spinners
 
-> 60+ spinners for use in the terminal
+> 70+ spinners for use in the terminal
 
 <p align="center">
 	<br>
@@ -42,6 +42,8 @@ The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/s
 Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
+
+The `random` spinner will return a random spinner each time it's called.
 
 ## Related
 
