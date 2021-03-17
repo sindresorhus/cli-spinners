@@ -29,6 +29,7 @@ test('constant width', t => {
 		if (key !== 'default') {
 			continue;
 		}
+
 		const {
 			[key]: {
 				frames,
