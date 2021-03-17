@@ -9,8 +9,6 @@
 	<br>
 </p>
 
-The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
-
 You probably want to use one of these spinners through the [`ora`](https://github.com/sindresorhus/ora) module.
 
 ## Install
