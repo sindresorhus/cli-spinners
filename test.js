@@ -14,18 +14,17 @@ test('constant width', t => {
 		if (key !== 'default') {
 			continue;
 		}
-			const {
-				[key]: {
-					frames,
-					frames: [
-						firstFrame
-					]
-				}
-			} = cliSpinners;
+		const {
+			[key]: {
+				frames,
+				frames: [
+					firstFrame
+				]
+			}
+		} = cliSpinners;
 
-			const firstFrameLength = stringLength(firstFrame);
+		const firstFrameLength = stringLength(firstFrame);
 
-			t.true(frames.every(frame => stringLength(frame) === firstFrameLength));
-		}
+		t.true(frames.every(frame => stringLength(frame) === firstFrameLength));
 	}
 });
