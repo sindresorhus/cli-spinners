@@ -26,6 +26,7 @@ test('main', t => {
 
 test('constant width', t => {
 	for (const key of Object.keys(cliSpinners)) {
+		// TODO: Remove this if statement when "module.exports.default = spinners" is removed from index.js.
 		if (key === 'default') {
 			continue;
 		}
