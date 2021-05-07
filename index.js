@@ -13,5 +13,3 @@ Object.defineProperty(spinners, 'random', {
 });
 
 module.exports = spinners;
-// TODO: Remove this for the next major release
-module.exports.default = spinners;
