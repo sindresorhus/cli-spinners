@@ -1,6 +1,6 @@
 'use strict';
 
-const spinners = Object.assign({}, require('./spinners.json'));
+const spinners = Object.assign({}, require('./spinners.json')); // eslint-disable-line import/extensions
 
 const spinnersList = Object.keys(spinners);
 
