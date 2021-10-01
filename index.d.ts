@@ -71,7 +71,17 @@ declare namespace cliSpinners {
 		| 'grenade'
 		| 'point'
 		| 'layer'
-		| 'betaWave';
+		| 'betaWave'
+		| 'fingerDance'
+		| 'fistBump'
+		| 'soccerHeader'
+		| 'mindblown'
+		| 'speaker'
+		| 'orangePulse'
+		| 'bluePulse'
+		| 'orangeBluePulse'
+		| 'timeTravel'
+		| 'aesthetic';
 
 	interface Spinner {
 		/**
