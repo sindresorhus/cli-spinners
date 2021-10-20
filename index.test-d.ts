@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import cliSpinners = require('.');
-import {Spinner} from '.';
+import cliSpinners from './index.js';
+import type {Spinner} from './index.js';
 
 expectType<Spinner>(cliSpinners.dots);

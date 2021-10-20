@@ -1,7 +1,7 @@
-'use strict';
-const readline = require('readline');
-const logUpdate = require('log-update');
-const cliSpinners = require('.');
+import process from 'node:process';
+import readline from 'node:readline';
+import logUpdate from 'log-update';
+import cliSpinners from './index.js';
 
 const spinners = Object.keys(cliSpinners);
 let frame = 0;
@@ -34,17 +34,15 @@ readline.emitKeypressEvents(process.stdin);
 
 process.stdin.setRawMode(true);
 
-process.stdin.on('keypress', (str, key) => {
+process.stdin.on('keypress', (_, key) => {
 	if (key.ctrl && key.name === 'c') {
 		// eslint-disable-next-line unicorn/no-process-exit
 		process.exit(130);
 	}
 
-	if (key.name === 'return') {
-		if (scrutator) {
-			clearTimeout(scrutator);
-			showNextSpinner();
-		}
+	if (key.name === 'return' && scrutator) {
+		clearTimeout(scrutator);
+		showNextSpinner();
 	}
 });
 
