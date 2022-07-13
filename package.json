@@ -1,6 +1,8 @@
 {
 	"name": "cli-spinners",
 	"version": "2.6.1",
+	"type": "module",
+	"exports": "./index.js",
 	"description": "Spinners for use in the terminal",
 	"license": "MIT",
 	"repository": "sindresorhus/cli-spinners",
@@ -11,7 +13,7 @@
 		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd",
@@ -40,10 +42,16 @@
 		"json"
 	],
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"log-update": "^3.2.0",
-		"string-length": "^4.0.1",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^3.15.0",
+		"esm": "^3.2.25",
+		"log-update": "^5.0.0",
+		"string-length": "^5.0.1",
+		"tsd": "^0.18.0",
+		"xo": "^0.45.0"
+	},
+	"ava": {
+		"require": [
+			"esm"
+		]
 	}
 }

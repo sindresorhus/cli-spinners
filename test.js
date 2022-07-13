@@ -1,7 +1,7 @@
 import test from 'ava';
 import stringLength from 'string-length';
 
-import cliSpinners from '.';
+import cliSpinners from './index.js';
 
 function mockMathRandom(fixedResult) {
 	unMockMathRandom();
@@ -26,18 +26,13 @@ test('main', t => {
 
 test('constant width', t => {
 	for (const key of Object.keys(cliSpinners)) {
-		// TODO: Remove this if statement when "module.exports.default = spinners" is removed from index.js.
-		if (key === 'default') {
-			continue;
-		}
-
 		const {
 			[key]: {
 				frames,
 				frames: [
-					firstFrame
-				]
-			}
+					firstFrame,
+				],
+			},
 		} = cliSpinners;
 
 		const firstFrameLength = stringLength(firstFrame);
@@ -48,8 +43,6 @@ test('constant width', t => {
 
 test('random getter', t => {
 	const spinnersList = Object.keys(cliSpinners)
-		// TODO: Remove this filter when "module.exports.default = spinners" is removed from index.js.
-		.filter(key => key !== 'default')
 		.map(key => cliSpinners[key]);
 
 	// Should always return an item from the spinners list.
