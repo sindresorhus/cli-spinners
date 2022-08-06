@@ -30,6 +30,7 @@ declare namespace cliSpinners {
 		| 'bounce'
 		| 'boxBounce'
 		| 'boxBounce2'
+		| 'binary'
 		| 'triangle'
 		| 'arc'
 		| 'circle'
