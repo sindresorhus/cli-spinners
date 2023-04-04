@@ -1466,7 +1466,7 @@
 		]
 	},
 	"dwarfFortress": {
-		"interval": 100,
+		"interval": 80,
 		"frames": [
 			" ██████£££  ",
 			"☺██████£££  ",
