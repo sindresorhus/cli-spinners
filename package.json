@@ -40,6 +40,7 @@
 		"json"
 	],
 	"devDependencies": {
+		"@types/node": "^17.0.41",
 		"ava": "^1.4.1",
 		"log-update": "^3.2.0",
 		"string-length": "^4.0.1",
