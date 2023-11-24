@@ -1,6 +1,6 @@
 {
 	"name": "cli-spinners",
-	"version": "2.9.1",
+	"version": "2.9.2",
 	"description": "Spinners for use in the terminal",
 	"license": "MIT",
 	"repository": "sindresorhus/cli-spinners",
