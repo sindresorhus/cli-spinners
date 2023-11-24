@@ -83,7 +83,8 @@ declare namespace cliSpinners {
 		| 'orangeBluePulse'
 		| 'timeTravel'
 		| 'aesthetic'
-		| 'dwarfFortress';
+		| 'dwarfFortress'
+		| 'sand';
 
 	interface Spinner {
 		/**
