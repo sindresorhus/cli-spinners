@@ -15,8 +15,8 @@ You probably want to use one of these spinners through the [`ora`](https://githu
 
 ## Install
 
-```
-$ npm install cli-spinners
+```sh
+npm install cli-spinners
 ```
 
 ## Usage
