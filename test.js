@@ -1,7 +1,6 @@
 import test from 'ava';
 import stringLength from 'string-length';
-
-import cliSpinners from '.';
+import cliSpinners, {randomSpinner} from './index.js';
 
 function mockMathRandom(fixedResult) {
 	unMockMathRandom();
@@ -26,18 +25,13 @@ test('main', t => {
 
 test('constant width', t => {
 	for (const key of Object.keys(cliSpinners)) {
-		// TODO: Remove this if statement when "module.exports.default = spinners" is removed from index.js.
-		if (key === 'default') {
-			continue;
-		}
-
 		const {
 			[key]: {
 				frames,
 				frames: [
-					firstFrame
-				]
-			}
+					firstFrame,
+				],
+			},
 		} = cliSpinners;
 
 		const firstFrameLength = stringLength(firstFrame);
@@ -46,22 +40,19 @@ test('constant width', t => {
 	}
 });
 
-test('random getter', t => {
-	const spinnersList = Object.keys(cliSpinners)
-		// TODO: Remove this filter when "module.exports.default = spinners" is removed from index.js.
-		.filter(key => key !== 'default')
-		.map(key => cliSpinners[key]);
+test('randomSpinner()', t => {
+	const spinnersList = Object.values(cliSpinners);
 
 	// Should always return an item from the spinners list.
-	t.true(spinnersList.includes(cliSpinners.random));
+	t.true(spinnersList.includes(randomSpinner()));
 
 	// Should return the first spinner when `Math.random()` is the minimum value.
 	mockMathRandom(0);
-	t.is(cliSpinners.random, spinnersList[0]);
+	t.is(randomSpinner(), spinnersList[0]);
 
 	mockMathRandom(0.99);
 	// Should return the last spinner when `Math.random()` is the maximum value.
-	t.is(cliSpinners.random, spinnersList[spinnersList.length - 1]);
+	t.is(randomSpinner(), spinnersList.at(-1));
 
 	unMockMathRandom();
 });

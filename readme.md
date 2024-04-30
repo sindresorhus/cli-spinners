@@ -11,7 +11,7 @@
 
 The list of spinners is just a [JSON file](spinners.json) and can be used wherever.
 
-You probably want to use one of these spinners through the [`ora`](https://github.com/sindresorhus/ora) module.
+You probably want to use one of these spinners through the [`ora`](https://github.com/sindresorhus/ora) package.
 
 ## Install
 
@@ -22,7 +22,7 @@ npm install cli-spinners
 ## Usage
 
 ```js
-const cliSpinners = require('cli-spinners');
+import cliSpinners from 'cli-spinners';
 
 console.log(cliSpinners.dots);
 /*
@@ -39,11 +39,27 @@ The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/s
 
 ## API
 
+### cliSpinners
+
 Each spinner comes with a recommended `interval` and an array of `frames`.
 
 [See the spinners.](spinners.json)
 
-The `random` spinner will return a random spinner each time it's called.
+### randomSpinner()
+
+Get a random spinner.
+
+```js
+import {randomSpinner} from 'cli-spinners';
+
+console.log(randomSpinner());
+/*
+{
+	interval: 80,
+	frames: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+}
+*/
+```
 
 ## Related
 
