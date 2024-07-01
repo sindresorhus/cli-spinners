@@ -12,6 +12,7 @@ export type SpinnerName =
 	| 'dots10'
 	| 'dots11'
 	| 'dots12'
+	| 'dots14'
 	| 'dots8Bit'
 	| 'sand'
 	| 'line'
