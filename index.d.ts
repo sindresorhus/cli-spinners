@@ -15,6 +15,7 @@ export type SpinnerName =
 	| 'dots13'
 	| 'dots14'
 	| 'dots8Bit'
+	| 'dotsCircle'
 	| 'sand'
 	| 'line'
 	| 'line2'
