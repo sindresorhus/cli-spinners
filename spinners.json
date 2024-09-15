@@ -1102,6 +1102,13 @@
 			"🌏 "
 		]
 	},
+	"padlock": {
+		"interval": 500,
+		"frames": [
+			"🔒",
+			"🔓"
+		]
+	},
 	"material": {
 		"interval": 17,
 		"frames": [

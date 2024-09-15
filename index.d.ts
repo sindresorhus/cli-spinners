@@ -65,6 +65,7 @@ export type SpinnerName =
 	| 'hearts'
 	| 'clock'
 	| 'earth'
+	| 'padlock'
 	| 'material'
 	| 'moon'
 	| 'runner'
