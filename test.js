@@ -25,15 +25,9 @@ test('main', t => {
 
 test('constant width', t => {
 	for (const key of Object.keys(cliSpinners)) {
-		const {
-			[key]: {
-				frames,
-				frames: [
-					firstFrame,
-				],
-			},
-		} = cliSpinners;
-
+		const spinner = cliSpinners[key];
+		const frames = spinner.frames;
+		const firstFrame = frames[0];
 		const firstFrameLength = stringLength(firstFrame);
 
 		t.true(frames.every(frame => stringLength(frame) === firstFrameLength));

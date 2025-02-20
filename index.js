@@ -1,11 +1,20 @@
 import spinners from './spinners.json' with {type: 'json'};
 
-export default spinners;
+// 添加新的 spinner
+const allSpinners = {
+	...spinners,
+	dots2: {
+		interval: 80,
+		frames: ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
+	}
+};
 
-const spinnersList = Object.keys(spinners);
+export default allSpinners;
+
+const spinnersList = Object.keys(allSpinners);
 
 export function randomSpinner() {
 	const randomIndex = Math.floor(Math.random() * spinnersList.length);
 	const spinnerName = spinnersList[randomIndex];
-	return spinners[spinnerName];
+	return allSpinners[spinnerName];
 }
