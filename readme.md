@@ -33,6 +33,9 @@ console.log(cliSpinners.dots);
 */
 ```
 
+- `interval` is the intended time per frame, measured in milliseconds.
+- `frames` is an array of frames included in this spinner.
+
 ## Preview
 
 The header GIF is outdated. See all the [spinner at once](https://jsfiddle.net/sindresorhus/2eLtsbey/embedded/result/) or [one at the time](https://asciinema.org/a/95348?size=big).
