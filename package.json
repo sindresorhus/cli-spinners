@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"//test": "xo && ava && tsc --noEmit index.d.ts",
-		"test": "ava && tsc --noEmit index.d.ts",
+		"test": "ava && tsc --noEmit --resolveJsonModule index.d.ts",
 		"asciicast": "asciinema rec --command='node example-all.js' --title='cli-spinner' --quiet"
 	},
 	"files": [
