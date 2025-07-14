@@ -91,12 +91,12 @@ export type SpinnerName =
 
 export type Spinner = {
 	/**
-	The recommended interval.
+	The intended time per frame, in milliseconds.
 	*/
 	readonly interval: number;
 
 	/**
-	A list of frames to show for the spinner.
+	An array of frames to show for the spinner.
 	*/
 	readonly frames: string[];
 };
