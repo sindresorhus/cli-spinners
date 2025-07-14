@@ -33,8 +33,8 @@ console.log(cliSpinners.dots);
 */
 ```
 
-- `interval` is the intended time per frame, measured in milliseconds.
-- `frames` is an array of frames included in this spinner.
+- `interval` is the intended time per frame, in milliseconds.
+- `frames` is an array of frames to show for the spinner.
 
 ## Preview
 
