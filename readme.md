@@ -71,3 +71,4 @@ console.log(randomSpinner());
 - [py-spinners](https://github.com/ManrajGrover/py-spinners) - Python port
 - [spinners](https://github.com/FGRibreau/spinners) - Terminal spinners for Rust
 - [go-spinners](https://github.com/gabe565/go-spinners) - Go port
+- [bash-cli-spinners](https://github.com/simeg/bash-cli-spinners) - Terminal spinners in Bash
