@@ -19,6 +19,7 @@ export type SpinnerName =
 	| 'sand'
 	| 'line'
 	| 'line2'
+	| 'rollingLine'
 	| 'pipe'
 	| 'simpleDots'
 	| 'simpleDotsScrolling'
