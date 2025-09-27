@@ -88,7 +88,9 @@ export type SpinnerName =
 	| 'orangeBluePulse'
 	| 'timeTravel'
 	| 'aesthetic'
-	| 'dwarfFortress';
+	| 'dwarfFortress'
+	| 'matterTransformGlitch'
+	| 'matterTransformGlitch2';
 
 export type Spinner = {
 	/**
