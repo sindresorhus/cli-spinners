@@ -1662,7 +1662,7 @@
 			" ██████£££  "
 		]
 	},
-	"matterTrasformGlitch": {
+	"matterTransformGlitch": {
 		"interval": 80,
 		"frames": [
 			"●", 
@@ -1728,7 +1728,7 @@
 			"●"
 		]
 	},
-	"matterTrasformGlitch2": {
+	"matterTransformGlitch2": {
 		"interval": 80,
 		"frames": [
 			"●",
