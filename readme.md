@@ -72,3 +72,4 @@ console.log(randomSpinner());
 - [spinners](https://github.com/FGRibreau/spinners) - Terminal spinners for Rust
 - [go-spinners](https://github.com/gabe565/go-spinners) - Go port
 - [bash-cli-spinners](https://github.com/simeg/bash-cli-spinners) - Terminal spinners in Bash
+- [spinner.nvim](https://github.com/xieyonn/spinner.nvim) - spinners in Neovim
